@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BONTEN eSports | Free Fire Organization, India</title>
+<meta name="description" content="BONTEN eSports is a Free Fire organization running structured trials, funded scrims and several teams under one name. Apply for trials.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BONTEN eSports | Compete with purpose. Earn your place.">
+<meta property="og:description" content="A Free Fire organization with structured trials, funded scrims and opportunities for ambitious players.">
+<meta property="og:image" content="images/bonten-logo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/bonten-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--k:#000;--c1:#111;--c2:#1b1b1b;--w:#fff;--o:#f2f2f2;--s:#bfc3c9;--m:#858585;--rule:rgba(255,255,255,.14);--rule2:rgba(255,255,255,.32);
+--disp:'Archivo','Arial Black','Helvetica Neue',Arial,sans-serif;--body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;--ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html{scroll-padding-top:88px;scroll-behavior:smooth}
+body{background:var(--k);color:var(--o);font:400 16.5px/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--disp);font-stretch:125%;font-weight:900;line-height:.95;letter-spacing:-.025em;text-wrap:balance}
+h1,h2{text-transform:uppercase}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--w);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--w);color:var(--k);padding:10px 16px;z-index:60;border-radius:6px}.skip:focus{left:8px}
+.w{max-width:1200px;margin:0 auto;padding:0 28px}
+.mute{color:var(--m)}
+svg.i{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* BUTTON SYSTEM */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 22px;border:1px solid var(--w);border-radius:6px;background:var(--w);color:var(--k);font:700 14px/1 var(--body);letter-spacing:.03em;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .12s}
+.btn svg.i{width:16px;height:16px;transition:transform .25s var(--ease)}
+.btn:hover{background:var(--s);border-color:var(--s)}.btn:hover svg.i{transform:translateX(3px)}
+.btn.ext:hover svg.i{transform:translate(2px,-2px)}
+.btn:active{transform:scale(.98);background:var(--m);border-color:var(--m)}
+.btn.ghost{background:transparent;color:var(--w);border-color:var(--rule2)}
+.btn.ghost:hover{background:rgba(255,255,255,.08);border-color:var(--w)}.btn.ghost:active{background:rgba(255,255,255,.16)}
+.btn.inv{background:var(--k);color:var(--w);border-color:var(--k)}.btn.inv:hover{background:var(--c2);border-color:var(--c2)}.btn.inv:active{background:var(--c1)}
+.btn.sm{height:40px;padding:0 16px;font-size:13px}
+.btn[aria-disabled=true]{pointer-events:none;background:transparent;color:var(--m);border-color:var(--rule)}
+
+/* TICKER */
+.ticker{background:var(--w);color:var(--k);height:36px;overflow:hidden;font:600 13px/36px var(--body);position:relative;z-index:21}
+.ticker .track{display:flex;width:max-content;animation:tick 48s linear infinite}
+.ticker:hover .track,.ticker:focus-within .track{animation-play-state:paused}
+.ticker ul{display:flex;list-style:none;flex:none}
+.ticker li{display:flex;align-items:center;gap:28px;padding-left:28px;white-space:nowrap}
+.ticker li:after{content:"";width:5px;height:5px;background:var(--k);transform:rotate(45deg)}
+.ticker a{text-decoration:underline;text-underline-offset:3px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.bar{display:flex;align-items:center;gap:40px;height:76px}
+.brand{display:block;flex:none;width:150px}.brand img{display:block;width:100%;height:auto}
+nav.main{display:flex;gap:6px;margin-left:auto;font-size:14px;font-weight:600;color:var(--m)}
+nav.main a{position:relative;padding:10px 12px;transition:color .2s}
+nav.main a:after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:1px;background:var(--w);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+nav.main a:hover,nav.main a.cur{color:var(--w)}nav.main a:hover:after,nav.main a.cur:after{transform:scaleX(1)}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;border:1px solid var(--rule2);border-radius:6px;background:none;cursor:pointer;position:relative;transition:background .2s}
+.menu-btn:hover{background:rgba(255,255,255,.08)}
+.menu-btn i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--w);transition:transform .3s var(--ease),top .3s var(--ease)}
+.menu-btn i:first-child{top:17px}.menu-btn i:last-child{top:25px}
+.open .menu-btn i:first-child{top:21px;transform:rotate(45deg)}.open .menu-btn i:last-child{top:21px;transform:rotate(-45deg)}
+#menu{position:fixed;inset:0;z-index:15;background:var(--k);display:flex;flex-direction:column;padding:112px 22px calc(28px + env(safe-area-inset-bottom));opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;overflow-y:auto}
+.open #menu{opacity:1;visibility:visible}
+#menu .links{display:flex;flex-direction:column;margin-bottom:auto}
+#menu .links a{display:flex;align-items:baseline;gap:16px;font:900 clamp(26px,8vw,38px)/1 var(--disp);font-stretch:125%;letter-spacing:-.02em;text-transform:uppercase;padding:15px 0;border-bottom:1px solid var(--rule)}
+#menu .links small{font:600 12px var(--body);letter-spacing:.04em;color:var(--m);min-width:22px}
+#menu .acts{display:grid;gap:10px;margin-top:28px}#menu .btn{height:52px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;min-height:min(700px,calc(100svh - 112px - 100px));padding-block:56px 40px}
+.hero h1{font-size:clamp(40px,5.7vw,82px);margin-bottom:28px}
+.hero h1 span{display:block}.hero h1 span+span{color:transparent;-webkit-text-stroke:1.5px var(--s)}
+.hero p{max-width:30em;color:var(--s);font-size:18px;margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.mark{position:relative;margin-right:-40px}
+.mark:before{content:"";position:absolute;left:50%;top:50%;width:min(100%,560px);aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid var(--rule);border-radius:50%}
+.mark img{position:relative;display:block;width:110%;margin-left:-5%;height:auto;aspect-ratio:700/520;object-fit:cover;object-position:50% 44%;mix-blend-mode:screen}
+.hero-in>*{animation:rise .9s var(--ease) both}.hero-in>.mark{animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}
+.facts div{padding:22px 24px;border-left:1px solid var(--rule)}.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:800 22px/1.1 var(--disp);font-stretch:112%;color:var(--w)}
+.facts span{font-size:14px;color:var(--m)}
+
+/* SECTIONS */
+section{padding:120px 0;border-bottom:1px solid var(--rule)}
+.alt{background:var(--c1)}
+h2{font-size:clamp(32px,4.4vw,58px);margin-bottom:18px}
+.lede{font-size:18px;color:var(--m);max-width:28em}
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px}
+.split>:first-child{position:sticky;top:120px;align-self:start}
+.about .w{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:24px 72px;align-items:end}
+.statement{font:900 clamp(28px,4.2vw,54px)/1.02 var(--disp);font-stretch:125%;letter-spacing:-.025em;text-transform:uppercase;text-wrap:balance}
+.statement em{font-style:normal;color:var(--m)}
+.about p.mute{font-size:17px;max-width:30em}
+
+/* WHY */
+.lead{background:var(--w);color:var(--k);padding:40px;border-radius:6px;margin-bottom:8px}
+.lead h3{font-size:clamp(28px,3.6vw,46px);margin:18px 0 12px}.lead p{max-width:28em;font-size:18px}
+.lead .n{color:var(--k)}
+.n{font:800 14px/1 var(--disp);font-stretch:112%;color:var(--s)}
+.rows{list-style:none;counter-reset:x 1}
+.rows li{display:grid;grid-template-columns:48px minmax(0,1fr) minmax(0,1.35fr);gap:4px 20px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:baseline;transition:padding .3s var(--ease)}
+.rows li:hover{padding-left:10px}
+.rows h3{font-size:17px;font-stretch:100%;letter-spacing:-.005em;line-height:1.2}.rows p{color:var(--m);font-size:15.5px}
+
+/* TEAMS */
+.teams-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin-top:56px}
+.teams-grid>div{background:var(--k);padding:40px}.teams-grid>div:last-child{display:flex;flex-direction:column;justify-content:center}
+.teams-grid .vis{display:grid;place-items:center;background:var(--c1);position:relative;min-height:320px}
+.teams-grid .vis img{width:min(100%,320px);height:auto;opacity:.9;mix-blend-mode:screen}
+.teams-grid h3{font-size:clamp(24px,2.8vw,34px);margin-bottom:14px}.teams-grid p{color:var(--m);max-width:30em;margin-bottom:26px}
+.teams-grid ul{list-style:none;margin-bottom:30px;border-top:1px solid var(--rule)}.teams-grid li{padding:12px 0;border-bottom:1px solid var(--rule);display:flex;gap:12px;align-items:center;color:var(--s);font-size:15.5px}
+.teams-grid li svg{color:var(--w)}
+
+/* TRIAL JOURNEY */
+.tl-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:64px}
+.tl-head h2{max-width:10em;margin:0}.tl-head p{max-width:24em}
+.rail{position:relative;display:grid;grid-template-columns:repeat(5,1fr);margin-bottom:40px}
+.rail:before,.rail .fill{content:"";position:absolute;left:10%;top:27px;height:2px;background:var(--rule)}
+.rail:before{right:10%}
+.rail .fill{background:var(--w);width:0;transition:width .5s var(--ease)}
+.node{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px;background:none;border:0;color:var(--m);font:600 14px/1.25 var(--body);cursor:pointer;padding:0 6px;text-align:center;transition:color .2s}
+.node b{display:grid;place-items:center;width:56px;height:56px;border-radius:6px;background:var(--k);border:1px solid var(--rule2);font:800 18px var(--disp);font-stretch:112%;color:var(--s);transition:background .25s,color .25s,border-color .25s,transform .25s var(--ease)}
+.node:hover b{border-color:var(--w);color:var(--w)}
+.node.done b{border-color:var(--w);color:var(--w)}
+.node.on b{background:var(--w);color:var(--k);border-color:var(--w);transform:translateY(-4px)}
+.node.on,.node.done{color:var(--w)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;border:1px solid var(--rule);border-radius:6px;padding:36px;background:var(--k);min-height:190px}
+.panel h3{font-size:clamp(26px,3.2vw,40px);margin:12px 0 12px}.panel p{color:var(--s);font-size:18px;max-width:30em}
+.panel .ctl{display:flex;gap:10px}
+.panel .ctl .btn{width:48px;padding:0}.panel .ctl .prev svg{transform:scaleX(-1)}.panel .ctl .prev:hover svg{transform:scaleX(-1) translateX(3px)}
+.panel .ctl .btn[disabled]{opacity:.35;pointer-events:none}
+.panel .swap{animation:open .35s var(--ease)}
+.cond{margin-top:32px;max-width:44em;color:var(--m);padding-top:20px;border-top:1px solid var(--rule)}.cond b{color:var(--w)}
+
+/* SCRIMS */
+.scrims{position:relative;overflow:hidden;background:var(--w);color:var(--k)}
+.scrims .big{position:absolute;right:max(28px,calc((100vw - 1200px)/2 + 28px));top:50%;transform:translateY(-50%);font:900 clamp(110px,15vw,210px)/.8 var(--disp);font-stretch:125%;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px var(--k);opacity:.35;text-transform:uppercase;pointer-events:none;user-select:none}
+.scrims .w{position:relative}
+.scrims h2{font-size:clamp(34px,5.4vw,72px);max-width:8.5em}
+.scrims p{font-size:19px;max-width:26em;margin-bottom:32px}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:10px;margin-top:56px}
+.tile{position:relative;overflow:hidden;border-radius:6px;background:var(--c2);border:1px solid var(--rule);display:grid;place-items:center}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .4s}
+.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:14px;bottom:12px;font-size:13px;font-weight:600;color:var(--w);text-shadow:0 1px 8px #000}
+.tile.a{grid-column:span 6;grid-row:span 3;background:var(--k)}.tile.a img{object-fit:contain;padding:12px}
+.tile.b{grid-column:span 6;grid-row:span 2;background:var(--k)}.tile.b img{object-fit:contain;padding:20px}
+.tile.e{grid-column:span 3;grid-row:span 1;border-style:dashed;border-color:var(--rule2);background:transparent;text-align:center;padding:16px;color:var(--m);font-size:13.5px;line-height:1.4}
+.tile.e svg{width:20px;height:20px;margin-bottom:6px;color:var(--s)}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--rule)}.faq details:first-of-type{border-top:1px solid var(--rule)}
+summary{cursor:pointer;list-style:none;padding:24px 0;font-weight:700;font-size:17.5px;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s}
+summary::-webkit-details-marker{display:none}summary:hover{color:var(--s)}
+summary:after{content:"";flex:none;width:30px;height:30px;border:1px solid var(--rule2);border-radius:6px;background:linear-gradient(var(--w),var(--w)) center/10px 1.5px no-repeat,linear-gradient(var(--w),var(--w)) center/1.5px 10px no-repeat;transition:transform .3s var(--ease),background-color .2s}
+summary:hover:after{background-color:rgba(255,255,255,.1)}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--m);padding:0 48px 26px 0;max-width:36em;animation:open .3s var(--ease)}
+@keyframes open{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+/* MANAGEMENT */
+.person{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;align-items:center;padding:24px 0;border-bottom:1px solid var(--rule)}
+.person:first-child{border-top:1px solid var(--rule)}
+.person h3{font-size:clamp(24px,3vw,34px)}.person p{color:var(--m);font-size:15px;grid-column:1}.person .btn{grid-column:2;grid-row:1/3}
+
+/* COMMUNITY */
+.comm{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.comm>*{display:flex;flex-direction:column;gap:14px;padding:36px 32px;border-left:1px solid var(--rule);background:var(--k);transition:background .25s}
+.comm>*:first-child{border-left:0}
+a.ch:hover{background:var(--c2)}
+.comm .ic{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--rule2);border-radius:6px;font-size:22px}
+.comm h3{font-size:24px;margin-top:10px}.comm p{color:var(--m);font-size:15.5px;flex:1}
+.comm .go{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px}.comm .go svg{transition:transform .25s var(--ease)}
+a.ch:hover .go svg{transform:translate(3px,-3px)}
+.comm .soon{opacity:.75}.comm .soon .go{color:var(--m)}
+
+/* APPLY */
+.apply .head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:44px;flex-wrap:wrap}
+.apply h2{font-size:clamp(34px,5.4vw,72px);margin:0}.apply .head p{max-width:24em;color:var(--m)}
+.main-go{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 32px;align-items:end;padding:40px;background:var(--w);color:var(--k);border-radius:6px}
+.main-go h3{font-size:clamp(28px,4vw,48px)}.main-go p{margin-top:12px;max-width:26em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.two a{display:flex;justify-content:space-between;gap:20px;align-items:center;border:1px solid var(--rule);border-radius:6px;padding:28px 32px;transition:background .2s,border-color .2s}
+.two a:hover{background:var(--c2);border-color:var(--rule2)}.two svg{width:22px;height:22px;color:var(--s)}
+.two h3{font-size:22px;margin-bottom:6px}.two p{color:var(--m);font-size:15.5px}
+.req{margin:36px 0 0 20px;color:var(--m);font-size:15.5px}.req li{padding:2px 0}.req a{color:var(--w);text-decoration:underline;text-underline-offset:3px}
+
+/* FOOTER */
+footer{background:var(--c1);padding:72px 0 calc(32px + env(safe-area-inset-bottom));color:var(--m);font-size:14.5px}
+.ft{display:grid;grid-template-columns:minmax(0,5fr) repeat(3,minmax(0,2fr));gap:40px}
+.ft img{mix-blend-mode:screen;width:170px;height:auto;display:block;margin-bottom:18px}.ft p{max-width:24em}
+.ft h4{font:700 14px var(--body);color:var(--w);margin-bottom:14px}
+.ft ul{list-style:none;display:grid;gap:10px}.ft a{transition:color .2s}.ft a:hover{color:var(--w)}
+.ft-b{display:flex;justify-content:space-between;gap:12px 32px;flex-wrap:wrap;margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);font-size:13.5px}
+
+#terms .w{max-width:780px;padding-block:32px 112px}
+#terms h1{font-size:clamp(34px,6vw,56px);margin:8px 0 14px}
+.back{display:inline-flex;gap:8px;align-items:center;margin:20px 0;color:var(--m);font-size:15px;font-weight:600}.back:hover{color:var(--w)}
+.back svg{transform:scaleX(-1)}
+#terms ol{list-style:none;counter-reset:r;margin-top:32px;border-top:1px solid var(--rule)}
+#terms li{counter-increment:r;display:grid;grid-template-columns:44px 1fr;padding:16px 0;border-bottom:1px solid var(--rule)}
+#terms li:before{content:counter(r,decimal-leading-zero);font:800 15px/1.7 var(--disp);font-stretch:112%;color:var(--s)}
+
+#bar{display:none;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:12;gap:8px;transform:translateY(160%);transition:transform .35s var(--ease)}
+#bar.on{transform:none}#bar .btn{height:52px;flex:1}#bar .ghost{background:var(--k)}#bar .btn:first-child{flex:1.5}
+
+.js .r{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .r.in{opacity:1;transform:none}
+
+@media(max-width:1000px){
+.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0;padding-left:0}.facts div:nth-child(n+3){border-top:1px solid var(--rule)}
+.teams-grid,.comm{grid-template-columns:1fr}.comm>*{border-left:0;border-top:1px solid var(--rule)}.comm>*:first-child{border-top:0}
+.ft{grid-template-columns:1fr 1fr}.ft>:first-child{grid-column:1/-1}
+}
+@media(max-width:800px){
+.ticker{font-size:12.5px}
+nav.main,.bar>.btn{display:none}.menu-btn{display:block}
+.bar{height:68px}.brand{width:132px}
+.hero-in{grid-template-columns:minmax(0,1fr);min-height:0;padding-block:8px 36px}
+.mark{order:-1;margin:12px 0 24px}.mark:before{width:auto;height:96%}.mark img{aspect-ratio:700/470;width:104%;margin-left:-2%}
+.facts b{font-size:18px}
+.hero h1{font-size:clamp(34px,10.4vw,52px);margin-bottom:20px}.hero p{font-size:16.5px;margin-bottom:28px}.cta .btn{flex:1 1 100%}
+section{padding:80px 0}.w{padding:0 22px}
+.split,.about .w{grid-template-columns:minmax(0,1fr);gap:36px}.split>:first-child{position:static}
+.lead{padding:28px 22px}.rows li{grid-template-columns:36px 1fr}.rows p{grid-column:2}
+.teams-grid>div{padding:28px 22px}.teams-grid .vis{min-height:240px}
+.tl-head{margin-bottom:40px}
+.rail:before,.rail .fill{top:21px}.node{font-size:11.5px;gap:10px;padding:0 2px}.node b{width:42px;height:42px;font-size:15px}.node span{display:block;min-height:3em}
+.panel{grid-template-columns:1fr;padding:26px 22px}.panel .ctl{justify-self:start}
+.scrims .big{top:auto;bottom:14px;transform:none;right:22px;font-size:32vw}.scrims{padding-bottom:170px}
+.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}.tile.a{grid-column:span 2;grid-row:span 3}.tile.b{grid-column:span 2;grid-row:span 2}.tile.e{grid-column:span 1}
+summary{font-size:16.5px}details p{padding-right:0}
+.apply .head{margin-bottom:32px}.main-go{grid-template-columns:1fr;padding:28px 22px;gap:24px}.main-go .btn{justify-self:start}
+.two{grid-template-columns:1fr}.two a{padding:24px 22px}
+.comm>*{padding:28px 22px}
+.person .btn{padding:0 14px}
+#bar{display:flex}footer{padding-bottom:calc(104px + env(safe-area-inset-bottom))}.ft{gap:32px 20px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .r{opacity:1;transform:none}.ticker .track{width:auto;flex-wrap:wrap;height:auto}.ticker{height:auto;line-height:1.4;padding:8px 0}.ticker ul[aria-hidden]{display:none}html{scroll-behavior:auto}}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+<symbol id="dc" viewBox="0 0 24 24"><path d="M4 6.5C4 5.1 5.1 4 6.5 4h11C18.9 4 20 5.1 20 6.5v8c0 1.4-1.1 2.5-2.500 2.500H11l-4 3.500v-3.500h-.5C5.100 17 4 15.900 4 14.500z"/><path d="M9 10v1.500M15 10v1.500"/></symbol>
+<symbol id="ig" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.700"/><path d="M16.800 7.200h.01"/></symbol>
+<symbol id="yt" viewBox="0 0 24 24"><rect x="3" y="5.500" width="18" height="13" rx="4"/><path d="m10.500 9.500 4 2.500-4 2.500z"/></symbol>
+<symbol id="im" viewBox="0 0 24 24"><rect x="3.500" y="4.500" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="1.500"/><path d="m4 17 5-4.500 3.500 3 3-2.500L20 17"/></symbol>
+<symbol id="ck" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="ticker" role="region" aria-label="Announcements"><div class="track">
+<ul><li>Trials are open. Apply through the official form.<a href="#apply">Apply now</a></li><li>Our own scrims begin in December</li><li>BONTEN teams receive free slots in our scrims</li><li>Friendly rooms with BONTEN teams every Sunday</li><li>Follow announcements on <a href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Discord</a></li></ul>
+<ul aria-hidden="true"><li>Trials are open. Apply through the official form.<a href="#apply" tabindex="-1">Apply now</a></li><li>Our own scrims begin in December</li><li>BONTEN teams receive free slots in our scrims</li><li>Friendly rooms with BONTEN teams every Sunday</li><li>Follow announcements on <a href="https://discord.gg/FEATWJAAya" tabindex="-1">Discord</a></li></ul>
+</div></div>
+
+<header><div class="w bar">
+<a class="brand" href="#" aria-label="BONTEN eSports home"><img src="images/bonten-wordmark.webp" width="520" height="160" alt="BONTEN eSports"></a>
+<nav class="main" aria-label="Primary"><a href="#why">Why BONTEN</a><a href="#teams">Teams</a><a href="#trials">Trials</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#community">Community</a><a href="#management">Management</a></nav>
+<a class="btn sm" href="#apply">Apply <svg class="i"><use href="#ar"/></svg></a>
+<button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+</div></header>
+<nav id="menu" aria-label="Menu" aria-hidden="true">
+<div class="links"><a href="#why"><small>01</small>Why BONTEN</a><a href="#teams"><small>02</small>Teams</a><a href="#trials"><small>03</small>Trials</a><a href="#gallery"><small>04</small>Gallery</a><a href="#faq"><small>05</small>FAQ</a><a href="#community"><small>06</small>Community</a><a href="#management"><small>07</small>Management</a><a href="#terms"><small>08</small>Terms</a></div>
+<div class="acts"><a class="btn" href="#apply">Apply for trials <svg class="i"><use href="#ar"/></svg></a><a class="btn ghost ext" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Join our Discord <svg class="i"><use href="#ne"/></svg></a></div>
+</nav>
+
+<main id="main">
+<div class="hero"><div class="w hero-in" id="top">
+<div>
+<h1><span>Compete with purpose.</span><span>Earn your place.</span></h1>
+<p>An organization built around competitive Free Fire, structured trials, funded scrims and opportunities for ambitious players.</p>
+<div class="cta"><a class="btn" href="#apply">Apply for trials <svg class="i"><use href="#ar"/></svg></a><a class="btn ghost ext" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Join our Discord <svg class="i"><use href="#ne"/></svg></a></div>
+</div>
+<div class="mark"><img src="images/bonten-logo.webp" width="700" height="700" alt="BONTEN eSports logo: a horned samurai mask" fetchpriority="high"></div>
+</div>
+<div class="w"><div class="facts">
+<div><b>2 to 3 weeks</b><span>Trial process</span></div>
+<div><b>Funded</b><span>Scrims</span></div>
+<div><b>Sundays</b><span>Friendly rooms</span></div>
+<div><b>December</b><span>Own scrims begin</span></div>
+</div></div></div>
+
+<section class="about" id="about"><div class="w">
+<p class="statement r">BONTEN is an organization, <em>not a single team.</em></p>
+<p class="mute r">We run several Free Fire teams under one name, with management, funded scrims and structured trials. Players join a team for trials first, and those who clear them are placed into BONTEN's teams.</p>
+</div></section>
+
+<section id="why"><div class="w split"><div class="r"><h2>Why BONTEN</h2><p class="lede">What players receive once they clear the trials.</p></div>
+<div>
+<div class="lead r"><span class="n">01</span><h3>Funded scrims</h3><p>Scrims against strong teams, funded by the organization.</p></div>
+<ol class="rows r">
+<li><span class="n">02</span><h3>Guild entry</h3><p>Players who clear the trials are admitted to the BONTEN guild.</p></li>
+<li><span class="n">03</span><h3>Earnings share</h3><p>A percentage of weekend earnings is shared among players. There is no fixed salary.</p></li>
+<li><span class="n">04</span><h3>Sunday friendly rooms</h3><p>Friendly rooms with BONTEN teams every Sunday.</p></li>
+<li><span class="n">05</span><h3>Free scrim slots</h3><p>From December, BONTEN teams receive free slots in the organization's own scrims.</p></li>
+<li><span class="n">06</span><h3>Player eSports card</h3><p>A QR card listing tournaments played, wins, biggest prize, experience, device and current organization.</p></li>
+<li><span class="n">07</span><h3>YouTube features</h3><p>Selected gameplay may be featured on BONTEN's YouTube channel in the future.</p></li>
+<li><span class="n">08</span><h3>Path to larger organizations</h3><p>When a squad is ready for a larger organization, management can help facilitate a mutually agreed transition.</p></li>
+<li><span class="n">09</span><h3>Team culture</h3><p>A competitive environment built on teamwork and mutual respect.</p></li>
+<li><span class="n">10</span><h3>Organizational support</h3><p>Players can reach management for support when needed.</p></li>
+</ol></div></div></section>
+
+<section class="alt" id="teams"><div class="w">
+<div class="r"><h2>Our teams</h2><p class="lede">Several Free Fire teams, one organization.</p></div>
+<div class="teams-grid r">
+<div class="vis"><img src="images/bonten-logo.webp" width="700" height="700" alt="" loading="lazy"></div>
+<div><h3>Rosters are published once verified</h3>
+<p>We list only confirmed teams and players. Current rosters will appear here as management approves them.</p>
+<ul><li><svg class="i"><use href="#ck"/></svg>Players trial in a team first</li><li><svg class="i"><use href="#ck"/></svg>Those who clear trials are placed into BONTEN teams</li><li><svg class="i"><use href="#ck"/></svg>Teams get funded scrims and Sunday friendly rooms</li></ul>
+<div class="cta"><a class="btn" href="#apply">Trial for a team <svg class="i"><use href="#ar"/></svg></a><a class="btn ghost ext" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Ask on Discord <svg class="i"><use href="#ne"/></svg></a></div></div>
+</div></div></section>
+
+<section id="trials"><div class="w">
+<div class="tl-head r"><h2>Five steps to the trial</h2><p class="lede">The process usually takes 2 to 3 weeks, sometimes longer. Select a step to see what happens.</p></div>
+<div class="r" id="journey">
+<div class="rail" role="tablist" aria-label="Trial steps"><div class="fill" id="fill"></div></div>
+<div class="panel" role="tabpanel" id="panel" aria-live="polite"><div class="swap"><span class="n" id="pn"></span><h3 id="pt"></h3><p id="pd"></p></div>
+<div class="ctl"><button class="btn ghost prev" id="prev" aria-label="Previous step"><svg class="i"><use href="#ar"/></svg></button><button class="btn next" id="next" aria-label="Next step"><svg class="i"><use href="#ar"/></svg></button></div></div>
+</div>
+<p class="cond r"><b>Joining is not guaranteed.</b> Selection depends on your trial performance.</p>
+</div></section>
+
+<section class="scrims" id="scrims"><span class="big" aria-hidden="true">Dec</span><div class="w">
+<h2 class="r">Our own scrims begin in December</h2>
+<p class="r">BONTEN teams get free slots. The schedule will be announced.</p>
+<a class="btn inv ext r" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Follow on Discord <svg class="i"><use href="#ne"/></svg></a>
+</div></section>
+
+<section class="alt" id="gallery"><div class="w">
+<div class="r"><h2>Gallery</h2><p class="lede">Organization media. Tournament photographs and screenshots are added as they are approved.</p></div>
+<div class="gal r">
+<figure class="tile a"><img src="images/bonten-logo.webp" width="700" height="700" alt="BONTEN eSports logo" loading="lazy"><figcaption>BONTEN eSports</figcaption></figure>
+<figure class="tile b"><img src="images/freefire-india.webp" width="420" height="249" alt="Free Fire India logo" loading="lazy"><figcaption>Free Fire India</figcaption></figure>
+<div class="tile e"><div><svg class="i"><use href="#im"/></svg><br>Tournament screenshot<br>coming soon</div></div>
+<div class="tile e"><div><svg class="i"><use href="#im"/></svg><br>Team photograph<br>coming soon</div></div>
+</div></div></section>
+
+<section class="faq" id="faq"><div class="w split"><div class="r"><h2>Questions</h2></div><div class="r">
+<details><summary>How long does the process take?</summary><p>Two to three weeks from the form to the trial, sometimes longer.</p></details>
+<details><summary>Is selection guaranteed?</summary><p>No. It depends on your trial performance.</p></details>
+<details><summary>Do players receive a salary?</summary><p>There is no fixed salary. Players receive a percentage of earnings.</p></details>
+<details><summary>Is age verification required?</summary><p>Yes, for every player.</p></details>
+<details><summary>Can I leave after I am placed in a team?</summary><p>Yes, through the proper process with management. Do not leave without informing us.</p></details>
+</div></div></section>
+
+<section class="alt" id="community"><div class="w">
+<div class="r"><h2>Community</h2><p class="lede">Announcements, updates and gameplay, across three channels.</p></div>
+<div class="comm r">
+<a class="ch" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener"><span class="ic"><svg class="i"><use href="#dc"/></svg></span><h3>Discord</h3><p>Announcements, scrim news and the community.</p><span class="go">Join server <svg class="i"><use href="#ne"/></svg></span></a>
+<a class="ch" href="https://www.instagram.com/bontenesp" target="_blank" rel="noopener"><span class="ic"><svg class="i"><use href="#ig"/></svg></span><h3>Instagram</h3><p>Updates from the organization at @bontenesp.</p><span class="go">Follow <svg class="i"><use href="#ne"/></svg></span></a>
+<div class="soon"><span class="ic"><svg class="i"><use href="#yt"/></svg></span><h3>YouTube</h3><p>Our channel link will be added here soon.</p><span class="go">Coming soon</span></div>
+</div></div></section>
+
+<section id="management"><div class="w split"><div class="r"><h2>Management</h2><p class="lede">Contact opens Instagram.</p></div><div class="r">
+<div class="person"><h3>RYUK</h3><p>Founder</p><a class="btn ghost sm ext" href="https://www.instagram.com/ryukonly" target="_blank" rel="noopener" aria-label="Contact RYUK on Instagram">Contact <svg class="i"><use href="#ne"/></svg></a></div>
+<div class="person"><h3>AADYY</h3><p>Co-Founder and Financial Manager</p><a class="btn ghost sm ext" href="https://www.instagram.com/noname_reign" target="_blank" rel="noopener" aria-label="Contact AADYY on Instagram">Contact <svg class="i"><use href="#ne"/></svg></a></div>
+<div class="person"><h3>CHIRAG</h3><p>Operations Manager</p><a class="btn ghost sm ext" href="https://www.instagram.com/chirag.__009" target="_blank" rel="noopener" aria-label="Contact CHIRAG on Instagram">Contact <svg class="i"><use href="#ne"/></svg></a></div>
+<div class="person"><h3>JATIN</h3><p>Event Host</p><a class="btn ghost sm ext" href="https://www.instagram.com/ok.jatinn" target="_blank" rel="noopener" aria-label="Contact JATIN on Instagram">Contact <svg class="i"><use href="#ne"/></svg></a></div>
+<div class="person"><h3>SHOURYA</h3><p>Moderator</p><a class="btn ghost sm ext" href="https://www.instagram.com/shouryaxmod" target="_blank" rel="noopener" aria-label="Contact SHOURYA on Instagram">Contact <svg class="i"><use href="#ne"/></svg></a></div>
+</div></div></section>
+
+<section class="apply alt" id="apply"><div class="w">
+<div class="head r"><h2>Apply for trials</h2><p>Start with the form that matches where you are.</p></div>
+<div class="main-go r"><div><h3>Join a team for trials</h3><p>For players ready to start the trial process now.</p></div><a class="btn inv ext" href="https://trials.prepareace.workers.dev/join" target="_blank" rel="noopener">Open form <svg class="i"><use href="#ne"/></svg></a></div>
+<div class="two r">
+<a href="https://trials.prepareace.workers.dev/" target="_blank" rel="noopener"><div><h3>Future trials</h3><p>Register to be considered for upcoming trials.</p></div><svg class="i"><use href="#ne"/></svg></a>
+<a href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener"><div><h3>Discord</h3><p>Announcements, scrim news and the community.</p></div><svg class="i"><use href="#ne"/></svg></a></div>
+<ul class="req r">
+<li>Age verification is compulsory for every player.</li>
+<li>Every member of your team must fill in the form.</li>
+<li>All details must be accurate.</li>
+<li>Read the <a href="#terms">terms and conditions</a> first.</li></ul>
+</div></section>
+</main>
+
+<main id="terms" hidden><div class="w"><a class="back" href="#"><svg class="i"><use href="#ar"/></svg> Back to website</a><h1>Terms and conditions</h1><p class="mute">By applying to BONTEN eSports, you agree to the following.</p>
+<ol>
+<li><span>Age verification is compulsory for every player.</span></li>
+<li><span>All details must be accurate. False information leads to rejection.</span></li>
+<li><span>Once you are assigned to a team, you may not leave or disappear without informing management.</span></li>
+<li><span>To leave the organization, follow the proper process with management.</span></li>
+<li><span>Communicate respectfully with your teammates and with other teams.</span></li>
+<li><span>Do not argue with, or behave rudely toward, any partner, host or founder of the organization.</span></li>
+<li><span>Players caught using a hack panel or cheats are banned from the organization permanently and without appeal. A public ban notice may be issued.</span></li>
+<li><span>Players receive a percentage of earnings only. There is currently no fixed salary.</span></li>
+<li><span>Be online on time for scrims.</span></li>
+<li><span>Joining is not guaranteed. It depends on your trial performance.</span></li></ol>
+<a class="back" href="#"><svg class="i"><use href="#ar"/></svg> Back to website</a></div></main>
+
+<footer><div class="w">
+<div class="ft">
+<div><img src="images/bonten-wordmark.webp" width="520" height="160" alt="BONTEN eSports" loading="lazy"><p>A Free Fire organization with structured trials, funded scrims and several teams under one name.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#why">Why BONTEN</a></li><li><a href="#teams">Teams</a></li><li><a href="#trials">Trials</a></li><li><a href="#gallery">Gallery</a></li></ul></div>
+<div><h4>Organization</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#management">Management</a></li><li><a href="#apply">Apply</a></li><li><a href="#terms">Terms</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Discord</a></li><li><a href="https://www.instagram.com/bontenesp" target="_blank" rel="noopener">Instagram</a></li><li>YouTube (coming soon)</li></ul></div>
+</div>
+<div class="ft-b"><span>&copy; 2026 BONTEN eSports. A Free Fire organization.</span><a href="#top">Back to top</a></div>
+</div></footer>
+
+<div id="bar"><a class="btn" href="#apply">Apply for trials <svg class="i"><use href="#ar"/></svg></a><a class="btn ghost ext" href="https://discord.gg/FEATWJAAya" target="_blank" rel="noopener">Discord</a></div>
+
+<script>
+const $=s=>document.querySelector(s),root=document.documentElement,main=$('#main'),terms=$('#terms'),bar=$('#bar'),apply=$('#apply');
+function route(){const t=location.hash==='#terms';main.hidden=t;terms.hidden=!t;bar.style.visibility=t?'hidden':'';
+if(t||location.hash.length<2){scrollTo(0,0);return}document.querySelector(location.hash)?.scrollIntoView()}
+addEventListener('hashchange',route);route();
+
+const btn=$('#menuBtn'),menu=$('#menu');
+function setMenu(o){root.classList.toggle('open',o);btn.setAttribute('aria-expanded',o);menu.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''}
+btn.onclick=()=>setMenu(!root.classList.contains('open'));
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>setMenu(false));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+/* trial journey */
+const steps=[['Submit the form','Every member of your team fills in the full form.'],['We reach out','BONTEN management contacts you after the form.'],['Placed in a team','You are assigned to a team and start playing together.'],['Practice and review','Management reviews your progress while you practice.'],['Trial','Date, time and mode are shared with applicants.']];
+const rail=$('.rail'),fill=$('#fill'),prev=$('#prev'),next=$('#next');let cur=0;
+steps.forEach((s,i)=>{const b=document.createElement('button');b.className='node';b.role='tab';b.id='st'+i;b.innerHTML='<b>'+(i+1)+'</b><span>'+s[0]+'</span>';b.onclick=()=>go(i,true);rail.append(b)});
+function go(i,f){cur=Math.max(0,Math.min(4,i));const ns=rail.querySelectorAll('.node');
+ns.forEach((n,k)=>{n.classList.toggle('on',k===cur);n.classList.toggle('done',k<cur);n.setAttribute('aria-selected',k===cur);n.tabIndex=k===cur?0:-1});
+fill.style.width=(80*cur/4)+'%';$('#pn').textContent='Step '+(cur+1)+' of 5';$('#pt').textContent=steps[cur][0];$('#pd').textContent=steps[cur][1];
+const sw=$('.panel .swap');sw.style.animation='none';sw.offsetWidth;sw.style.animation='';
+$('#panel').setAttribute('aria-labelledby','st'+cur);prev.disabled=cur===0;next.disabled=cur===4;if(f)ns[cur].focus()}
+prev.onclick=()=>go(cur-1);next.onclick=()=>go(cur+1);
+rail.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(cur+1,true)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1,true)}});
+go(0);
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+document.querySelectorAll('.r').forEach(n=>io.observe(n));
+
+const links=[...document.querySelectorAll('nav.main a')],secs=links.map(a=>document.querySelector(a.hash));
+let tick=0;
+addEventListener('scroll',()=>{tick||(tick=requestAnimationFrame(()=>{tick=0;const r=apply.getBoundingClientRect();
+bar.classList.toggle('on',scrollY>520&&!(r.top<innerHeight&&r.bottom>0)&&!root.classList.contains('open'));
+let c=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)c=i});links.forEach((a,i)=>a.classList.toggle('cur',i===c))}))},{passive:true});
+</script>
+</body></html>
